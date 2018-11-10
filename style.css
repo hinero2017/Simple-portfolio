@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* with this setup centered everything on page */
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-family: Permanent Marker;
+	background: #f0eded;
+}
+
+div {
+	display: block;
+}
+
+nav {
+	/* it will always stick to the top */
+	position: fixed;
+	/* 100% it will take all screen from left to right */
+	width: 100%;
+}
+#navbar {
+	overflow: hidden;
+	height: 70px;
+	background-color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar a {
+	float: right;
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: Permanent Marker;
+}
+
+.intro {
+	top: 0;
+	min-height: 55vh;
+	padding: 350px 20px;
+	line-height: 10vh;
+	background: #1d2b64; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f8cdda, #1d2b64); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#f8cdda,
+		#1d2b64
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#welcome-section {
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	/* height of the welcome section equal to the height of the viewport. */
+	height: 100vh;
+}
+
+h2 {
+	margin: 20px;
+	padding: 40px;
+}
+
+.project {
+	text-decoration: none;
+	color: #212222;
+	display: inline-block;
+	overflow: hidden;
+	border: 2px solid rgb(153, 161, 163);
+	border-radius: 5px;
+	margin: 40px;
+	padding: 10px;
+	text-align: center;
+	background-color: rgb(218, 215, 215);
+
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.8;
+	word-spacing: 3px;
+	font-weight: bold;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.link {
+	display: inline-block;
+	padding: 20px;
+	margin: 10px;
+}
+
+footer {
+	padding: 2.2rem;
+	background: #22313f;
+	color: white;
+	line-height: 20px;
+	font-size: 1em;
+}
+footer p {
+	margin: 0;
+}
+
+/* Small Screens sizing with @media */
+@media (max-width: 750px) {
+	.grid {
+		grid-template-columns: 1fr;
+		padding: 5px;
+		margin: 5px;
+		width: 100%;
+	}
+}
